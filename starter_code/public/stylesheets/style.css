@@ -1,5 +1,162 @@
-.container {
+/* ===========================GENERAL=================================================================================== */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* ===========================FORM=================================================================================== */
+
+.form-container {
+  height: 100vh;
+  background-image: url(../image/manifest.jpg);
+  background-size: cover;
+}
+
+.form-itself {
+  height: 30em;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+}
+
+/* ===========================ARTIST AND ALBUM=================================================================================== */
+
+.artists-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  background-image: url(../image/download.jpeg);
+  height: 100vh;
+}
+
+.album-box {
+  background-color: rgb(0, 0, 0, 0.5);
+  max-width: 320px;
+  max-height: 400px;
+  padding: 25px;
+}
+
+.album-box img {
+  height: 300px;
+  width: 320px;
+}
+
+.album-box p {
+  color: white;
+  font-size: large;
+}
+
+.album-box li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ===========================PLAYER=================================================================================== */
+
+.spoti-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(../image/headphones.png);
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.spoti-player button {
+  margin-top: 25px;
+}
+
+/* ===========================FORM BUTTON=================================================================================== */
+
+.formButton {
+  -moz-box-shadow: inset 0px 1px 3px 0px #91b8b3;
+  -webkit-box-shadow: inset 0px 1px 3px 0px #91b8b3;
+  box-shadow: inset 0px 1px 3px 0px #91b8b3;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #768d87),
+    color-stop(1, #6c7c7c)
+  );
+  background: -moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+  background: -webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+  background: -o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+  background: -ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+  background: linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+  background-color: #768d87;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #566963;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 2px 23px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #2b665e;
+}
+.formButton:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #6c7c7c),
+    color-stop(1, #768d87)
+  );
+  background: -moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+  background: -webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+  background: -o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+  background: -ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+  background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+  background-color: #6c7c7c;
+}
+.formButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.formButton a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ===========================OTHER BUTTON=================================================================================== */
+
+.myButton {
+  background-color: white;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 6px 15px;
+  text-decoration: none;
+}
+
+.myButton:hover {
+  background-color: red;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.myButton a {
+  text-decoration: none;
+  color: black;
 }

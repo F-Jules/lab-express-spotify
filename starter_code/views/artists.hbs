@@ -1,15 +1,11 @@
-<div class="card" style="width: 18rem;">
-  <ul>
-    {{#each artistElements}}
-    <div class="row">
-      <li class="col-sm">
-        <img class="card-img-top" src="{{this.images.1.url}}" alt="Card image cap">
-        <div class="card-body">
-          <p>{{this.name}}</p>
-          <button><a href="/albums/{{this.id}}">View Albums</a></button>
-        </div>
-      </li>
-    </div>
-    {{/each}}
-  </ul>
-</div>
+<ul class="artists-box">
+  {{#each artistElements}}
+  <div class="album-box">
+    <li>
+      <img class="card-img-top" src="{{this.images.1.url}}" alt="Card image cap">
+      <p>{{this.name}}</p>
+      <button class="myButton"><a href="/albums/{{this.id}}">View Albums</a></button>
+    </li>
+  </div>
+  {{/each}}
+</ul>
